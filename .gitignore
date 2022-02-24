@@ -1,0 +1,6 @@
+.DS_Store
+package-lock.json
+node_modules
+docs/.vuepress/dist/*
+existing_digital_guide
+notes.md
