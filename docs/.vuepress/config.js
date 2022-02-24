@@ -6,5 +6,17 @@ module.exports = {
       '/'
     ],
   },
+  plugins: [
+    [
+      '@vuepress/plugin-search',
+      {
+        locales: {
+          '/': {
+            placeholder: 'Search',
+          },
+        },
+      },
+    ],
+  ],
   lastUpdated: 'Last Updated',
 }
