@@ -1,24 +1,24 @@
 .content {
-  font-size 10px;
+  font-size: 10px;
 }
 
 body .navbar .site-name {
-  color #fff;
+  color: #fff;
 }
 
 body .sidebar > .sidebar-links > li:not(:first-child) {
-    margin-top 0.15rem;
+    margin-top: 0.15rem;
 }
 
 body .sidebar > .sidebar-links > li > a.sidebar-link {
-    font-size 1em;
-    line-height 1.7;
-    font-weight normal;
+    font-size: 1em;
+    line-height: 1.7;
+    font-weight: normal;
 }
 
-body a.sidebar-link.active {
-  // font-weight bold !important;
-}
+// body a.sidebar-link.active {
+//   font-weight bold !important;
+// }
 
 .navbar {
   background-image: url('https://uk.steergroup.com/themes/custom/steer/logo.png');
