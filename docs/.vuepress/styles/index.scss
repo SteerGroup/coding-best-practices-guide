@@ -1,9 +1,4 @@
-:root {
-  --c-brand: #18c7de;
-  --c-text-accent: var(--c-brand);
-}
-
-html.dark  {
+:root, html.dark {
   --c-brand: #18c7de;
   --c-text-accent: var(--c-brand);
 }
