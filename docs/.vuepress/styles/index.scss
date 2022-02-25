@@ -1,3 +1,13 @@
+:root {
+  --c-brand: #18c7de;
+  --c-text-accent: var(--c-brand);
+}
+
+html.dark  {
+  --c-brand: #18c7de;
+  --c-text-accent: var(--c-brand);
+}
+
 .content {
   font-size: 10px;
 }
