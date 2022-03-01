@@ -1,44 +1,18 @@
 :root, html.dark {
   --c-brand: #18c7de;
-  --c-text-accent: var(--c-brand);
+  --c-brand-light: #4AF9FF;
 }
-
-.content {
-  font-size: 10px;
-}
-
-body .navbar .site-name {
-  color: #fff;
-}
-
-body .sidebar > .sidebar-links > li:not(:first-child) {
-    margin-top: 0.15rem;
-}
-
-body .sidebar > .sidebar-links > li > a.sidebar-link {
-    font-size: 1em;
-    line-height: 1.7;
-    font-weight: normal;
-}
-
-// body a.sidebar-link.active {
-//   font-weight bold !important;
-// }
 
 .navbar {
-  background-image: url('steer_logo.png');
-  background-repeat: no-repeat;
   background-color: #161B21;
-  background-size: 70px auto;
-  background-position-x: center;
-  background-position-y: center;
-}
-body .navbar .links {
-  background-color: transparent;
+  
+  .site-name {
+    color: #fff;
+    font-size: 1.6rem;
+    padding-left: 2rem;
+  }
 }
 
-@media (max-width: 719px) {
-  .navbar {
-    background-position-x: 200px;
-  }  
+h1, h2, h3, h4, h5, h6 {
+  outline-style: none;
 }
