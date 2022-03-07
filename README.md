@@ -1,9 +1,8 @@
-# Steer North America Programming Best Practices Guide
+# Steer Coding Best Practices Guide
 
-This repository contains the source code for the Steer North America
-Programming Best Practices Guide, which is an online document intended
-to help Steer North America staff write better, more consistent code
-and collaborate more effectively on coding projects.
+This repository contains the source code for the Steer Coding Best Practices
+Guide, which is an online document intended to help Steer staff write better,
+more consistent code and collaborate more effectively on coding projects.
 
 The guide is built with [VuePress](https://v2.vuepress.vuejs.org/).
 
