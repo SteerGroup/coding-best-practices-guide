@@ -1,7 +1,7 @@
 {
-  "name": "steer-na-programming-best-practices-guide",
+  "name": "steer-coding-best-practices-guide",
   "version": "0.0.1",
-  "description": "Steer North America Programming Best Practices Guide",
+  "description": "Guide to programming best practices at Steer",
   "license": "MIT",
   "scripts": {
     "docs:dev": "vuepress dev docs",
@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "main": "index.js",
-  "repository": "https://github.com/SteerGroup/programming-best-practices-guide-na.git",
+  "repository": "https://github.com/SteerGroup/coding-best-practices-guide.git",
   "author": "Andrew Desautels <andrew.desautels@steergroup.com>",
   "private": true,
   "devDependencies": {
