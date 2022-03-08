@@ -494,8 +494,8 @@ function). Each step in the cycle is described below:
    **refactoring**, and is described in greater detail in the next section of
    this guide.
 
-**The test-driven development cycle**  
-![The test-driven development cycle](tdd.png)
+**The test-driven development cycle**
+![The test-driven development cycle](/tdd.png)
 
 This process essentially puts guardrails and a feedback system in place before
 any coding begins, which allows you to focus on the target, one manageable chunk

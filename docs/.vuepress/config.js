@@ -2,7 +2,7 @@ module.exports = {
   title: 'Coding Best Practices Guide',
   description: 'Guide to programming best practices at Steer',
   themeConfig: {
-    logo: 'steer_logo.png',
+    logo: '/steer_logo.png',
     sidebar: [
       '/',
       'coding_process',

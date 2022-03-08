@@ -72,7 +72,7 @@ databases. The following graphic displays the structure, or schema, of a sample
 relational database.
 
 **Sample database schema**  
-![A sample database schema](sample_database_schema.png)
+![A sample database schema](/sample_database_schema.png)
 
 There is also another type of database called a NoSQL database that, not
 surprisingly, does not use SQL. NoSQL databases typically store data as a set of
