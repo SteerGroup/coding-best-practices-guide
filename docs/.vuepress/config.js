@@ -4,7 +4,17 @@ module.exports = {
   themeConfig: {
     logo: 'steer_logo.png',
     sidebar: [
-      '/'
+      '/',
+      'coding_process',
+      'languages',
+      'tools',
+      'code_style',
+      'code_structure',
+      'data',
+      'quality_assurance',
+      'refactoring',
+      'documentation',
+      'miscellaneous'
     ]
   },
   plugins: [
