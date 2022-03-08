@@ -1,4 +1,5 @@
 # Steer Coding Best Practices Guide
+[![Netlify build status](https://api.netlify.com/api/v1/badges/9605a650-694a-4212-87fe-61b5d0e73e1d/deploy-status)](https://app.netlify.com/sites/steer-coding-best-practices-guide/deploys)
 
 This repository contains the source code for the Steer Coding Best Practices
 Guide, which is an online document intended to help Steer staff write better,
