@@ -5,4 +5,5 @@ node_modules
 .cache
 docs/.vuepress/dist/*
 existing_digital_guide
+.vscode
 notes.md
