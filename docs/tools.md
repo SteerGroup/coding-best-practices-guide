@@ -133,7 +133,7 @@ For more information on Git, check out the Coding at Steer session on
 
 ::: tip
 Git allows you to define your own aliases, so if there's a command that you
-think should exist (e.g. displaying the Git log in a specific format), you can
+think should exist (e.g., displaying the Git log in a specific format), you can
 often create it with minimal effort!
 :::
 
@@ -141,7 +141,7 @@ often create it with minimal effort!
 
 Since Git is a distributed version control system, each user has a local copy of
 the repository, as described above. This creates the need for a canonical shared
-version of the repository that the developers can use to ensure their
+version of the repository that the developers can use to ensure their local
 repositories stay in sync. This is where cloud-based source code hosting
 services come in. At their core, these services offer hosting of repositories
 and the ability to "push" and "pull" changes between the remote repository and
@@ -159,8 +159,8 @@ the [Steer Organization](https://github.com/SteerGroup). To do so, you'll need
 to request an invitation from your regional Steer GitHub administrator
 ([Gayathri Shivaraman](mailto:gayathri.shivaraman@steergroup.com) for North
 America, [Alex Mitrani](mailto:alex.mitrani@steergroup.com) for Latin America,
-or [Colin Woods](mailto:colin.woods@steergroup.com) for Europe and other
-regions).
+or [Colin Woods](mailto:colin.woods@steergroup.com) for the UK, Europe, and
+other regions).
 
 ::: warning
 GitHub and other cloud-based source code hosting services are primarily meant
