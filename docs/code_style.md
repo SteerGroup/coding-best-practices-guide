@@ -31,7 +31,7 @@ text editors via extensions, and frequently provide suggested fixes to problems
 
 The following linters are recommended for use in Steer coding projects.
 
-* Python: [pycodestyle](https://pypi.org/project/pycodestyle/)
+* Python: [Flake8](https://flake8.pycqa.org/en/latest/)
 * R: [lintr](https://github.com/r-lib/lintr) 
 * Javascript: [ESLint](https://eslint.org) (can be configured to use the rules
   in the AirBnB Style Guide using the
