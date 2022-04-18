@@ -71,8 +71,8 @@ but users can program their own Stata packages and share these with other Stata
 
 [Official Stata Website](https://www.stata.com)
 
-Stata packages are available from the Statistical Software Components (SSC) 
-archive using the command `ssc install` within Stata.
+Stata packages are available from various sources. They can be browsed and 
+installed using the commands `search` and `ssc` within Stata. 
 
 ## JavaScript
 
