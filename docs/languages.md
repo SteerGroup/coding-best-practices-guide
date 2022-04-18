@@ -57,11 +57,21 @@ want to install Rtools, which is available from the Steer Software Center.
 
 ## Stata
 
-Stata is a general-purpose statistical software package that is largely code-driven although it also has a graphical user interface. It has two languages, the main “Stata” language and also an advanced programming language called Mata. Stata is semi-open software: the core is closed source and requires a licence, but users can program their own Stata packages and share these with other Stata users. Many user-written packages are available within Stata and online. Stata was initially designed to focus on one primary data object at a time. The benefit of this approach is that Stata syntax is simple and intuitive: often things can be done with a single line of Stata code where several lines would be required using Python or R. Stata could be a good choice if you are familiar with the requirements and need to get results quickly.  
+Stata is a general-purpose statistical software package that is largely code-
+driven although it also has a graphical user interface. It has two languages, 
+the main “Stata” language and also an advanced programming language called Mata. 
+Stata is semi-open software: the core is closed source and requires a license, 
+but users can program their own Stata packages and share these with other Stata
+ users. Many user-written packages are available within Stata and online. Stata
+ was initially designed to focus on one primary data object at a time. The 
+ benefit of this approach is that Stata syntax is simple and intuitive: often 
+ things can be done with a single line of Stata code where several lines would 
+ be required using Python or R. Stata could be a good choice if you are 
+ familiar with the requirements and need to get results quickly.  
 
 [Official Stata Website](https://www.stata.com)
 
-Stata packages are available from the Statistical Software Components (SSC) archive using the command “ssc install” within Stata.
+Stata packages are available from the Statistical Software Components (SSC) archive using the command 'ssc install' within Stata.
 
 ## JavaScript
 
