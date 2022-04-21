@@ -269,7 +269,7 @@ following are recommended:
 
 * Python: [pytest](https://docs.pytest.org)
 * R: [testthat](https://testthat.r-lib.org)
-* Javascript: [Mocha](https://mochajs.org) or [Jest](https://jestjs.io)
+* JavaScript: [Mocha](https://mochajs.org) or [Jest](https://jestjs.io)
 
 As an example, you might write a function to calculate the area of a triangle
 from the lengths of its sides. Your first test might assert that your function

@@ -20,7 +20,7 @@ The following style guides are recommended for use in Steer coding projects.
 
 * Python: [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
 * R: [Tidyverse Style Guide](https://style.tidyverse.org)
-* Javascript: [AirBnB Style Guide](http://github.com/airbnb/javascript)
+* JavaScript: [AirBnB Style Guide](http://github.com/airbnb/javascript)
 
 ## Linters
 
@@ -33,7 +33,7 @@ The following linters are recommended for use in Steer coding projects.
 
 * Python: [Flake8](https://flake8.pycqa.org/en/latest/)
 * R: [lintr](https://github.com/r-lib/lintr) 
-* Javascript: [ESLint](https://eslint.org) (can be configured to use the rules
+* JavaScript: [ESLint](https://eslint.org) (can be configured to use the rules
   in the AirBnB Style Guide using the
   [eslint-config-airbnb package](https://www.npmjs.com/package/eslint-config-airbnb))
 

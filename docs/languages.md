@@ -82,7 +82,7 @@ extremely popular for server-side web application development with
 you'll need to learn some JavaScript, along with HTML and CSS, which are
 described below. JavaScript has an enormous ecosystem.
 
-[Javascript at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[JavaScript at MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 JavaScript packages are available at [npm](https://www.npmjs.com).
 
