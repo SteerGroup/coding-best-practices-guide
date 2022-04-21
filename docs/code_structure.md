@@ -144,7 +144,7 @@ Hard-coding is particularly dangerous with API keys, passwords, and other
 sensitive information, but the use of environment variables provides an elegant
 solution to this problem, without limiting portability. Assuming you've created
 an environment variable called `EXAMPLE_API_KEY` (which can be done in a Bash
-shell using export `EXAMPLE_API_KEY="abc123"`), the following example shows how
+shell using `export EXAMPLE_API_KEY="abc123"`), the following example shows how
 you can get its value from the operating system and assign it to a variable in
 your code. This technique enables you to share your code without exposing your
 API key, while also allowing someone else to use your code with their own API
