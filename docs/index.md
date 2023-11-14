@@ -87,7 +87,7 @@ Note the following:
 
 Finally, treat the recommendations in this document as guidelines, not hard and
 fast rules. Coding is inherently creative, and once in a while you'll need to
-break the rules. This expected and even encouraged!
+break the rules. This is expected and even encouraged!
 
 ## About this Guide
 
