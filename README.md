@@ -11,7 +11,8 @@ The guide is built with [VuePress](https://v2.vuepress.vuejs.org/).
 
 ## Requirements
 
-Please make you have version 12 or later of Node.js installed.
+- [Node.js v18.16.0+](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) (included with Node.js)
 
 ## Installation
 
