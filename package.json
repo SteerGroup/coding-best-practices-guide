@@ -13,7 +13,7 @@
   "author": "Andrew Desautels <andrew.desautels@steergroup.com>",
   "private": true,
   "engines": {
-    "node": ">=18.12.0"
+    "node": ">=18.16.0"
   },
   "devDependencies": {
     "@vuepress/plugin-search": "^2.0.0-beta.68",
