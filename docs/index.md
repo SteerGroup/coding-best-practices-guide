@@ -53,11 +53,10 @@ Other Steer coding resources include the following:
 
 * [Coding at Steer Learning and Development training series](https://steer.learnupon.com/catalog/courses/3257694)
 * [Steer Coders on Teams](https://teams.microsoft.com/l/team/19:3590ab8701d343d59f8e6d563ffa4314@thread.tacv2/conversations?groupId=e20e9c13-bb7c-4b5d-b55d-98a59893147c&tenantId=c1eae432-c4d1-41b4-998c-de12d49f7913)
-  (if you're not currently a member, but would like to join, please email
-  [Andrew Desautels](mailto:andrew.desautels@steergroup.com) or
-  [Lucile Kellis](mailto:lucile.kellis@steergroup.com))
-* Data science monthly calls (email
-  [Lucile Kellis](mailto:lucile.kellis@steergroup.com) for more information)
+  (if you're not currently a member, but would like to join, please contact
+  [Andrew Desautels](mailto:andrew.desautels@steergroup.com))
+* Coding office hours (contact
+  [Andrew Desautels](mailto:andrew.desautels@steergroup.com) for more information)
 
 ## Objectives
 
