@@ -105,5 +105,5 @@ and the
 With any potentially sensitive data, be sure to take the appropriate precautions
 to ensure privacy laws are respected and the security of the data is maintained.
 Refer to
-[Steer's Global Data Protection Policy](http://eric.steergroup.com/company-info/General%20Data%20Protection%20Regulation/1.%20Global%20Data%20Protection%20Policy%20April%202021.pdf)
+[Steer's Global Data Protection Policy](https://sdgworld.sharepoint.com/sites/DocumentStore/Our%20operations/Legal%20&%20compliance%20support/ECHO%20-%20COMPLIANCE/Global%20data%20protection%20policy.docx)
 (must be connected to the Steer Network) for more details.
