@@ -129,7 +129,7 @@ learning curve at first, but you will find that it makes coding much easier in
 the long run.
 
 For more information on Git, check out the Coding at Steer session on
-[Git Basics](https://sdg.eloomi.com/learning/modules/1459/element/892?program=80).
+[Version Control and Collaboration with Git and GitHub](https://steer.learnupon.com/catalog/courses/3443765).
 
 ::: tip
 Git allows you to define your own aliases, so if there's a command that you
@@ -161,6 +161,9 @@ to request an invitation from your regional Steer GitHub administrator
 America, [Alex Mitrani](mailto:alex.mitrani@steergroup.com) for Latin America,
 or [Colin Woods](mailto:colin.woods@steergroup.com) for the UK, Europe, and
 other regions).
+
+For more information on GitHub, check out the Coding at Steer session on
+[Version Control and Collaboration with Git and GitHub](https://steer.learnupon.com/catalog/courses/3443765).
 
 ::: warning
 GitHub and other cloud-based source code hosting services are primarily meant

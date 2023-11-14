@@ -56,7 +56,7 @@ which can be done with the help of packages that exist specifically for this
 purpose.
 
 For more information, check out the Coding at Steer session on
-[Working with Web APIs](https://sdg.eloomi.com/learning/modules/1383/element/660?program=80)
+[Working with Web APIs](https://steer.learnupon.com/catalog/courses/3257694/content)
 and the
 [associated documents](https://sdgworld.sharepoint.com/:f:/r/sites/SteerCoders/Shared%20Documents/General/Coding%20at%20Steer/Working%20with%20Web%20APIs)
 (must be a member of the Steer Coders team).
@@ -95,7 +95,7 @@ then filtering. Importantly, in the latter case, the full data file has to be
 read into RAM (if it fits), while this is not the case when querying a database.
 
 For more information, check out the Coding at Steer session on
-[Working with Databases](https://sdg.eloomi.com/learning/modules/1388/element/670?program=80)
+[Working with Databases](https://steer.learnupon.com/catalog/courses/3257694/content)
 and the
 [associated documents](https://sdgworld.sharepoint.com/:f:/r/sites/SteerCoders/Shared%20Documents/General/Coding%20at%20Steer/Working%20with%20Databases)
 (must be a member of the Steer Coders team).
