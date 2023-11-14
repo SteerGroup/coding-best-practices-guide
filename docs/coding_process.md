@@ -22,42 +22,40 @@ file, start from scratch, and bring in pieces of it as appropriate,
 Whether or not you write exploratory code, there are several things you should
 do before you get too far along in the process:
 
-* Take some time to set up a good
+- Take some time to set up a good
   [development environment](tools.md#text-editors-ides) and get comfortable with
   it—this will pay off several times over in the long run. You of course won't
   have to do this at the beginning of every project, but it's not necessarily
   just a one-time activity either, since you'll probably want to play around
   with different options and modify your setup from time to time.
-* Scope and specify your project/task. Ask yourself questions like: "What
-  problem are you trying to solve?," "What data are you using?," "What outputs
-  are you looking to produce?", etc. Asking and answering questions like these
+- Scope and specify your project/task. Ask yourself questions like: "What
+  problem am I trying to solve?," "What data should I be using?," "What outputs
+  am I looking to produce?", etc. Asking and answering questions like these
   early on will help you to focus your efforts.
-* Determine the best [language(s)](languages.md) and [tools](tools.md) for the
+- Determine the best [language(s)](languages.md) and [tools](tools.md) for the
   job. The best tools may depend on several factors, including the nature of the
   task, the data you're working with, your experience and that of others on your
   project team, client requirements, etc. After weighing the various factors,
   you may decide the best approach is actually to use Excel or GIS software.
-* If coding collaboratively, agree on conventions for components like
+- If coding collaboratively, agree on conventions for components like
   [documentation](documentation.md) and [testing](testing.md), what type of
   [database](data.md#databases) to use, which package to use for visualization,
   etc.
-* Design your analysis at a high level, but don't try to plan out every single
+- Design your analysis at a high level, but don't try to plan out every single
   function or line of code. Understand that you're never going to end up with
   exactly what you planned out, and this is okay (and maybe even a good thing).
-* Break your approach down into [modules](code_structure.md#modularity) where
+- Break your approach down into [modules](code_structure.md#modularity) where
   possible, and think about whether some of the modules might already exist,
   either in other code at Steer, or in a publicly available package. Good
   programmers tend to be effectively lazy and "stand on the shoulders of giants"
   when possible—why reinvent the wheel if you don't have to?
-* Think about [reuse in other applications](code_structure.md#portability) and
+- Think about [reuse in other applications](code_structure.md#portability) and
   design with this in mind. Be someone else's giant!
 
 ::: tip NOTE
-
 You might have noticed some similarities with the early stages of the Steer SMBP
 process (Scope/Specify, Design, Build, Test). Just be warned that the
 design/build/test steps in coding are typically more iterative and overlapping.
-
 :::
 
 ## While Coding
@@ -68,12 +66,12 @@ your magic!
 We'll keep this section short, because it's the focus of most of this guide, but
 while you're coding, there are several important things to keep in mind:
 
-* Be prepared to revisit your design. As mentioned in the previous section, your
+- Be prepared to revisit your design. As mentioned in the previous section, your
   final product is never going to end up exactly matching your original plan.
-* Be consistent in your [coding style](code_style.md) and
+- Be consistent in your [coding style](code_style.md) and
   [structure](code_structure.md), both within your own code and also as much as
   possible with others at Steer.
-* At the risk of being redundant, always be thinking about how you can make your
+- At the risk of being redundant, always be thinking about how you can make your
   code easier to adapt for other uses. Chances are someone else is trying to
   solve a similar problem or develop a similar application.
 
@@ -91,7 +89,7 @@ declare victory and celebrate, right?...
 Not so fast—chances are your code is a complicated mess that only you (but not
 even future you) can understand. This is where
 [quality assurance](quality_assurance.md), [refactoring](refactoring.md), and
-[documentation](documentation.md), and come in. These efforts are essential to
+[documentation](documentation.md) come in. These efforts are essential to
 writing code that does what it's supposed to do and is usable by others, and you
 should always plan to spend considerable time on them.
 

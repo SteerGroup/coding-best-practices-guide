@@ -6,7 +6,7 @@ future, and easier to adapt for other projects.
 
 Best practices in this section generally apply to any programming language and
 any type of coding. For this reason, some of the examples use pseudocode
-(essentially text describing abstract code) instead of any particular language.
+(text describing abstract code) instead of any particular language.
 
 ## DRY Code
 
@@ -15,7 +15,7 @@ code that follows this principle is said to be DRY. DRY code is not only more
 efficient, but also much easier to update if something changes.
 
 If you find yourself writing code that looks like the "bad" example below, you
-should start thinking about loops and or functions to DRY it out. The "bad" code
+should start thinking about loops and/or functions to DRY it out. The "bad" code
 in the example is almost three times as long as it needs to be, and any change
 to one of the processing steps would need to be implemented in three places,
 which introduces significant potential for error. By introducing a for-loop, we
@@ -52,10 +52,10 @@ steps in a single location.
 
 ## Abstraction
 
-Where possible, abstract discrete actions into functions. This essentially lets
-you create discrete custom building blocks to work with, which lets you group
-your code into more manageable chunks and focus on how they fit together, rather
-than how every line of code fits in.
+Where possible, abstract discrete actions into functions. By doing so, you
+create discrete custom building blocks to work with, which lets you group your
+code into more manageable chunks and focus on how they fit together, rather than
+how every line of code fits in.
 
 The "better" code in the example below is taken from the previous example, where
 we've made a great deal of improvement, but we can still do better. By
@@ -65,9 +65,9 @@ free up the mental energy we were using to keep track of the processing code and
 use it elsewhere, since we can trust that the `process_trip_data` function will
 do its job. As an added bonus, the `process_trip_data` function is now available
 to us if we need it elsewhere in our code. Finally, note that the final two
-lines of pseudocode can now be very intuitively interpreted as "loop through the
-time periods and process the trip data for each." This is a great example of
-clear code that doesn't require clarifying comments.
+lines of pseudocode can now be intuitively interpreted as "loop through the time
+periods and process the trip data for each." This is a great example of clear
+code that doesn't require clarifying comments.
 
 ```
 # better (from previous example)
@@ -124,7 +124,7 @@ much DRYer than the "bad" one.
 # process inputs
 # write 'outputs2.csv' to 'Directory/'
 
-...   
+...
 
 
 # good
@@ -142,7 +142,7 @@ much DRYer than the "bad" one.
 
 Hard-coding is particularly dangerous with API keys, passwords, and other
 sensitive information, but the use of environment variables provides an elegant
-solution to this problem, without limiting portability. Assuming you've created
+solution to this problem without limiting portability. Assuming you've created
 an environment variable called `EXAMPLE_API_KEY` (which can be done in a Bash
 shell using `export EXAMPLE_API_KEY="abc123"`), the following example shows how
 you can get its value from the operating system and assign it to a variable in
@@ -152,25 +152,31 @@ key without having to modify the code.
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 import os
 
 example_api_key = os.getenv('EXAMPLE_API_KEY')
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 example_api_key <- Sys.getenv("EXAMPLE_API_KEY")
 
 
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
-const exampleApiKey = process.env.EXAMPLE_API_KEY
+const exampleApiKey = process.env.EXAMPLE_API_KEY;
 
 // Note that this is only relevant for server-side code.
 ```
+
 :::
 ::::
 
@@ -191,6 +197,7 @@ example will always return the same value for a given values of `a` and `b`.
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 # bad
 
@@ -207,8 +214,10 @@ def add_ab(a, b):
     return a + b
 
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 # bad
 
@@ -225,30 +234,33 @@ add_ab <- function(a, b) {
     return(a + b)
 }
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
 // bad
 
-const b = 3
+const b = 3;
 
 function addAB(a) {
-  return a + b
+  return a + b;
 }
 
 
 // good
 
 function addAB(a, b) {
-  return a + b
+  return a + b;
 }
 ```
+
 :::
 ::::
 
 ## Other Best Practices
 
-* Minimize the use of global variables. Global variables can be difficult to
+- Minimize the use of global variables. Global variables can be difficult to
   manage, since their scope is not limited to a particular function or class.
-* Try to design with scalability in mind to ensure your code will work with
+- Try to design with scalability in mind to ensure your code will work with
   larger data sets and/or more users.

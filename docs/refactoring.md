@@ -1,13 +1,13 @@
 # Refactoring
 
-There's a saying that the best way to write good code is to do it once, delete
-everything, and do it again. Obviously, following this advice to the letter
-isn't feasible for most coding projects, but the principle is an important one.
-The first time through the process, you will have gained a detailed
-understanding of the intricacies of the problem you're trying to solve and
-thought through the pros and cons of numerous approaches, but chances are the
-code you wrote while you were learning these lessons isn't as clean as it could
-be.
+There's a saying that the best way to write good code is to write it once,
+delete everything, and then write it again. Obviously, following this advice to
+the letter isn't feasible for most coding projects, but the principle is an
+important one. The first time through the process, you will have gained a
+detailed understanding of the intricacies of the problem you're trying to solve
+and thought through the pros and cons of numerous approaches, but chances are
+the code you wrote while you were learning these lessons isn't as clean as it
+could be.
 
 Refactoring is the process of revising sections of code without changing its
 functionality. This can involve simple improvements like cleaning up

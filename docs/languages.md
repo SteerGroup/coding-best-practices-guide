@@ -38,7 +38,7 @@ Python packages are available at [the Python Package Index](https://pypi.org).
 
 R is a programming language focused on statistical computing, and is mostly used
 by statisticians and data analysts/scientists. R is an open-source alternative
-to SAS, SPSS, and STATA. In addition to being great for working with data, R has
+to SAS, SPSS, and Stata. In addition to being great for working with data, R has
 strong visualization capabilities, and can be used for literate programming
 (where code and outputs are interspersed with text), and simple web
 applications. While R is widely used, its ecosystem is much smaller than that of
@@ -65,7 +65,7 @@ a license, but users can program their own Stata packages and share these with
 other Stata users. Stata was initially designed to focus on one primary data
 object at a time. The benefit of this approach is that Stata syntax is simple
 and intuitive. Stata could be a good choice if you are familiar with the
-requirements and need to get results quickly.  
+requirements and need to get results quickly.
 
 [Official Stata Website](https://www.stata.com)
 

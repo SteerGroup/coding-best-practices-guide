@@ -18,9 +18,9 @@ across different projects within a single organization.
 
 The following style guides are recommended for use in Steer coding projects.
 
-* Python: [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
-* R: [Tidyverse Style Guide](https://style.tidyverse.org)
-* JavaScript: [AirBnB Style Guide](http://github.com/airbnb/javascript)
+- Python: [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
+- R: [Tidyverse Style Guide](https://style.tidyverse.org)
+- JavaScript: [AirBnB Style Guide](http://github.com/airbnb/javascript)
 
 ## Linters
 
@@ -31,9 +31,9 @@ text editors via extensions, and frequently provide suggested fixes to problems
 
 The following linters are recommended for use in Steer coding projects.
 
-* Python: [Flake8](https://flake8.pycqa.org/en/latest/)
-* R: [lintr](https://github.com/r-lib/lintr) 
-* JavaScript: [ESLint](https://eslint.org) (can be configured to use the rules
+- Python: [Flake8](https://flake8.pycqa.org/en/latest/)
+- R: [lintr](https://github.com/r-lib/lintr)
+- JavaScript: [ESLint](https://eslint.org) (can be configured to use the rules
   in the AirBnB Style Guide using the
   [eslint-config-airbnb package](https://www.npmjs.com/package/eslint-config-airbnb))
 
@@ -44,10 +44,11 @@ overcommenting. If you've written clean code that follows good practices and the
 agreed-upon style guide, what your code does should already be fairly clear.
 Sparingly-used comments that describe what is happening in tricky parts of your
 code and why certain things are done are much preferred to comments describing
-what every line of code does.  
+what every line of code does.
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 # bad
 
@@ -61,14 +62,16 @@ while i < 3:   # loop until i reaches 3
 # good
 
 # Loop from 0 to 3, print values.
-i = 0        
+i = 0
 while i < 3:
     print(i)
     i = i + 1
 
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 # bad
 
@@ -82,14 +85,16 @@ while (i < 3) {  # loop until i reaches 3
 # good
 
 # Loop from 0 to 3, print values.
-i <- 0        
+i <- 0
 while (i < 3) {
     print(i)
     i <- i + 1
 }
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
 // bad
 
@@ -109,6 +114,7 @@ while (i < 3) {
   i += 1;
 }
 ```
+
 :::
 ::::
 
@@ -129,6 +135,7 @@ See the code block below for various good and bad naming examples.
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 # bad
 
@@ -159,8 +166,10 @@ def calculate_circle_area(radius):
 
 
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 # bad
 
@@ -191,38 +200,41 @@ calculate_circle_area <- function(radius) {
     return(pi * radius^2)
 }
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
 // bad
 
-const v = 1300
+const v = 1300;
 
-const purpString = 'work'
+const purpString = "work";
 
 function myFunction(x) {
-  return 5 * x
+  return 5 * x;
 }
 
 function area(x) {
-  return Math.PI * x ** 2
+  return Math.PI * x ** 2;
 }
 
 
 // good
 
-const volume = 1300
+const volume = 1300;
 
-const tripPurpose = 'work'
+const tripPurpose = "work";
 
 function multiplyByFive(x) {
-  return 5 * x
+  return 5 * x;
 }
 
 function calculateCircleArea(radius) {
-  return Math.PI * radius ** 2
+  return Math.PI * radius ** 2;
 }
 ```
+
 :::
 ::::
 
@@ -238,6 +250,7 @@ client-side code is very important) and processing of very large datasets.
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 # bad
 
@@ -254,8 +267,10 @@ utility_bus = beta_tt * tt_bus + beta_wt * wt_bus
 share_auto = math.exp(utility_auto) / (math.exp(utility_auto)
     + math.exp(utility_bus))
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 # bad
 
@@ -272,24 +287,27 @@ utility_bus <- beta_tt * tt_bus + beta_wt * wt_bus
 share_auto <- exp(utility_auto) / (exp(utility_auto)
     + exp(utility_bus))
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
 // bad
 
-const shareAuto = (Math.exp(mscAuto + betaTT * ttAuto)
-  / (Math.exp(mscAuto + betaTT * ttAuto)
-    + Math.exp(betaTT * ttBus + betaWT * wtBus)))
-
+const shareAuto =
+  Math.exp(mscAuto + betaTT * ttAuto) /
+  (Math.exp(mscAuto + betaTT * ttAuto) +
+    Math.exp(betaTT * ttBus + betaWT * wtBus));
 
 // better
 
-const utilityAuto = mscAuto + betaTT * ttAuto
-const utilityBus = betaTT * ttBus + betaWT * wtBus
+const utilityAuto = mscAuto + betaTT * ttAuto;
+const utilityBus = betaTT * ttBus + betaWT * wtBus;
 
-const shareAuto = Math.exp(utilityAuto) / (Math.exp(utilityAuto)
-  + Math.exp(utilityBus))
+const shareAuto =
+  Math.exp(utilityAuto) / (Math.exp(utilityAuto) + Math.exp(utilityBus));
 ```
+
 :::
 ::::
 
@@ -299,6 +317,6 @@ calculation, since they will need to be recomputed.
 
 ## Other Best Practices
 
-* Avoid deep nesting, which can make code very difficult to read.
-* Limit line length, typically to 80 characters or less. This generally
+- Avoid deep nesting, which can make code very difficult to read.
+- Limit line length, typically to 80 characters or less. This generally
   eliminates the need for horizontal scrolling and line wrapping when editing.

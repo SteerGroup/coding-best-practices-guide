@@ -15,13 +15,13 @@ ask someone who actually hasn't seen your code to do the same).
 The following additional guidelines apply to specific cases, but not all coding
 projects:
 
-* Standalone software that is intended for use by others should include not only
+- Standalone software that is intended for use by others should include not only
   documentation of the code, but also a user guide that focuses on how to use
   the software, rather than how specific sections of code work.
-* If you've created a remote repository on GitHub or another cloud repository,
+- If you've created a remote repository on GitHub or another cloud repository,
   be sure it includes a thorough
   [README file](https://github.com/18F/open-source-guide/blob/18f-pages/pages/making-readmes-readable.md).
-* If you've written a standalone script, a header with some descriptive comments
+- If you've written a standalone script, a header with some descriptive comments
   (like the example below) is usually helpful. Note that if you're using Git—and
   you should be!—the created by/updated by information is extraneous.
 

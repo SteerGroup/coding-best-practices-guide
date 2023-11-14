@@ -8,7 +8,7 @@ ensure quality code, however, many tools exist to help achieve this goal. This
 section presents a high-level discussion of coding errors, then introduces four
 tools for preventing, finding, and fixing errors: testing, debugging,
 test-driven development, and code review, and wraps up with some general
-recommendations for ensuring quality for different types of coding projects.
+recommendations for ensuring quality on different types of coding projects.
 
 ## Errors
 
@@ -25,13 +25,13 @@ Fatal errors occur when a computer is forced to stop executing code because it
 doesn't know how to proceed. This can happen for many reasons; some common
 examples follow:
 
-* A syntax error, which can be as simple as improper indentation or a missing
+- A syntax error, which can be as simple as improper indentation or a missing
   parenthesis, causes the computer to not be able to interpret the code.
-* The computer can't find an object because it doesn't exist or isn't in the
+- The computer can't find an object because it doesn't exist or isn't in the
   correct location.
-* An operation requires an argument of a specific type, but the argument passed
+- An operation requires an argument of a specific type, but the argument passed
   to it has a different type.
-* An arithmetic operation fails to return a result (e.g., a value is divided by
+- An arithmetic operation fails to return a result (e.g., a value is divided by
   zero).
 
 The good news is that when these errors occur, it's impossible to miss them. An
@@ -81,7 +81,7 @@ examples:
    chance.
 2. You're writing code that returns coordinates for a set of input addresses
    (don't actually do this, because there are plenty of geocoding packages out
-   there!). Your code loops through an array of addresses and calls a geocoding
+   there!). Your code loops through an set of addresses and calls a geocoding
    function on each. Without incorporating error handling, if your geocoding
    function fails for a single address, your code will stop executing.
    Especially since address data can be quirky, it would be a big improvement
@@ -92,8 +92,8 @@ examples:
 
 While syntax varies by language, the type of error handling described above can
 typically be accomplished using try...catch logic ("try...except" in Python).
-Try...catch logic *tries* to execute a piece of code, and if an error occurs, it
-*catches* the error and executes another piece of code. The code that is
+Try...catch logic _tries_ to execute a piece of code, and if an error occurs, it
+_catches_ the error and executes another piece of code. The code that is
 executed when the error is caught can, and in most cases should, depend on the
 type of error encountered. As suggested in the geocoding example above, when
 handling errors, it is often a good idea to print error messages to the console
@@ -102,6 +102,7 @@ of try...catch logic for the geocoding example above.
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 # assume geocode(address) is provided by an external package
 
@@ -122,8 +123,10 @@ def geocode_multiple(address_list):
 
 
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 # assume geocode(address) is provided by an external package
 
@@ -133,7 +136,7 @@ geocode_if_found <- function(address) {
         error = function(e) {
             if (e$message == paste("Address not found:", address)) {
                 print(e$message)
-                return("no coords")   
+                return("no coords")
             } else {
                 stop(e$message)
             }
@@ -144,28 +147,31 @@ geocode_if_found <- function(address) {
 # would be used with lapply to geocode a vector of addresses:
 # lapply(address_vector, geocode_if_found)
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
 // assume geocode(address) is provided by an external package
 
 function geocodeMultiple(address_list) {
   var coords = [];
-  address_list.forEach(address => {
+  address_list.forEach((address) => {
     try {
       coords.push(geocode(address));
     } catch (error) {
       if (error instanceof AddressNotFoundError) {
         console.log(`Address not found: ${address}`);
-        coords.push('no coords');
+        coords.push("no coords");
       } else {
-         throw error; 
+        throw error;
       }
     }
   });
   return coords;
 }
 ```
+
 :::
 ::::
 
@@ -212,13 +218,13 @@ errors and to ensure it meets its specification. The testing process varies
 greatly by project, and can involve a variety of types of tests and testing
 techniques. Several of the most important types of testing are introduced below.
 
-* **Unit testing** focuses on testing the smallest units of code, such as single
+- **Unit testing** focuses on testing the smallest units of code, such as single
   functions, to make sure they work as intended.
-* **Integration testing** focuses on the integration of modules to make sure
+- **Integration testing** focuses on the integration of modules to make sure
   they work together as intended.
-* **Regression testing** focuses on making sure working code continues to work
+- **Regression testing** focuses on making sure working code continues to work
   properly as changes are made elsewhere in the code.
-* **User acceptance testing** focuses on making sure the software meets the end
+- **User acceptance testing** focuses on making sure the software meets the end
   user's requirements.
 
 Development of any software intended for an external user should formally
@@ -246,12 +252,12 @@ application to users and getting feedback, it is also a primarily manual
 process.
 
 As with most technical work at Steer, checks to make sure that various inputs,
-outputs, and intermediate calculations make sense are essential, and these sense
-checks are difficult to automate since they generally rely on human judgment.
-Where possible, it is useful to incorporate benchmarks into your sense checking.
-For example, if your code includes a step that calculates trip rates, you may
-want to compare the trip rates with trip rate data from another source to see if
-the values are broadly similar.
+outputs, and intermediate calculations make sense are essential, and these
+sense-checks are difficult to automate since they generally rely on human
+judgment. Where possible, it is useful to incorporate benchmarks into your
+sense-checking. For example, if your code includes a step that calculates trip
+rates, you may want to compare the trip rates with trip rate data from another
+source to see if the values are broadly similar.
 
 ### Automated Testing
 
@@ -267,9 +273,9 @@ a fatal error before the assert statement), the test has failed.
 While numerous testing frameworks enable you to write these types of tests; the
 following are recommended:
 
-* Python: [pytest](https://docs.pytest.org)
-* R: [testthat](https://testthat.r-lib.org)
-* JavaScript: [Mocha](https://mochajs.org) or [Jest](https://jestjs.io)
+- Python: [pytest](https://docs.pytest.org)
+- R: [testthat](https://testthat.r-lib.org)
+- JavaScript: [Mocha](https://mochajs.org) or [Jest](https://jestjs.io)
 
 As an example, you might write a function to calculate the area of a triangle
 from the lengths of its sides. Your first test might assert that your function
@@ -285,6 +291,7 @@ appropriate error when given side lengths that can't form a valid triangle (the
 
 :::: code-group
 ::: code-group-item Python
+
 ```python
 import math
 import pytest
@@ -318,8 +325,10 @@ def test_incompatible_side_lengths():
     ):
         area_from_triangle_sides(1, 1, 3)
 ```
+
 :::
 ::: code-group-item R
+
 ```r
 library(testthat)
 
@@ -353,41 +362,44 @@ expect_error(
 
 
 ```
+
 :::
 ::: code-group-item JavaScript
+
 ```js
-test('handles scalene right triangle', () => {
+test("handles scalene right triangle", () => {
   expect(areaFromTriangleSides(3, 4, 5)).toBe(6);
 });
 
-test('handles scalene non-right triangle', () => {
+test("handles scalene non-right triangle", () => {
   expect(areaFromTriangleSides(2, 6, 7)).toBeCloseTo(5.562);
 });
 
-test('handles equilateral triangle', () => {
+test("handles equilateral triangle", () => {
   expect(areaFromTriangleSides(2, 2, 2)).toBeCloseTo(1.732);
 });
 
-test('handles isoceles triangle', () => {
+test("handles isoceles triangle", () => {
   expect(areaFromTriangleSides(0.5, 0.5, 0.2)).toBeCloseTo(0.049);
 });
 
-test('raises error for negative side length', () => {
-  expect(() => areaFromTriangleSides(-3, 4, 5))
-    .toThrow(InvalidTriangleError);
-  expect(() => areaFromTriangleSides(-3, 4, 5))
-    .toThrow('all side lengths must be greater than zero');
+test("raises error for negative side length", () => {
+  expect(() => areaFromTriangleSides(-3, 4, 5)).toThrow(InvalidTriangleError);
+  expect(() => areaFromTriangleSides(-3, 4, 5)).toThrow(
+    "all side lengths must be greater than zero"
+  );
 });
 
-test('raises error for incompatible side lengths', () => {
-  expect(() => areaFromTriangleSides(1, 1, 3))
-    .toThrow(InvalidTriangleError);
-  expect(() => areaFromTriangleSides(1, 1, 3))
-    .toThrow('c must be less than a plus b');
+test("raises error for incompatible side lengths", () => {
+  expect(() => areaFromTriangleSides(1, 1, 3)).toThrow(InvalidTriangleError);
+  expect(() => areaFromTriangleSides(1, 1, 3)).toThrow(
+    "c must be less than a plus b"
+  );
 });
 
 
 ```
+
 :::
 ::::
 
@@ -411,9 +423,9 @@ latter case, you should at least build in some automatic checks at key points in
 your code. The open-ended nature of coding makes it impossible to specify
 exactly what tests to include, but the following are a few suggestions:
 
-* check that row counts match expected values after data frames are merged.
-* check that totals match expected values after aggregation over groups.
-* check that minimum and/or maximum values of key data items are within
+- check that row counts match expected values after data frames are merged.
+- check that totals match expected values after aggregation over groups.
+- check that minimum and/or maximum values of key data items are within
   reasonable ranges after important computations.
 
 When used effectively, automated tests can help you find errors before they
@@ -431,7 +443,7 @@ Fortunately, modern development environments include debugging tools that
 greatly simplify the debugging process, but it can still be slow and painful.
 
 After minimal configuration, modern IDEs typically allow you to run code in some
-kind of *debug mode*. When an error or a user-specified breakpoint is
+kind of _debug mode_. When an error or a user-specified breakpoint is
 encountered, execution pauses and an interactive debugging process is triggered.
 While actively debugging, the user typically can step through/into/over pieces
 of code and can view the values of variables or other user-defined expressions
@@ -461,7 +473,7 @@ to follow leads until you find the root problem and figure out how to solve it.
 > "Debugging is like being the detective in a crime movie where you are also the
 > murderer."
 
-*— Filipe Fortes*
+_— Filipe Fortes_
 
 While debugging is much easier than it used to be, it's still a time-consuming
 process that takes practice to get comfortable with. Ideally though, you'll be
@@ -476,7 +488,7 @@ errors by writing unit tests before you actually write your code (yes, you read
 that correctly!).
 
 The process, which is illustrated in the figure below, is based on a cycle of
-*Red-Green-Refactor* that is repeated for each unit of code (e.g., a single
+_Red-Green-Refactor_ that is repeated for each unit of code (e.g., a single
 function). Each step in the cycle is described below:
 
 1. The developer writes a set of tests for the particular unit, being careful to
@@ -498,7 +510,7 @@ function). Each step in the cycle is described below:
 ![The test-driven development cycle](/tdd.png)
 
 This process essentially puts guardrails and a feedback system in place before
-any coding begins, which allows you to focus on the target, one manageable chunk
+any coding begins, which allows you to focus on the target one manageable chunk
 of code at a time, while constantly receiving feedback (via failed tests) that
 helps you know where adjustments need to be made. TDD requires significant
 upfront investment in the form of time required to write tests before coding,

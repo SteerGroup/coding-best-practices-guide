@@ -32,7 +32,7 @@ from text editors. These applications are often described as WYSIWYG (what you
 see is what you get), since the formatting you see on the screen is consistent
 with the final document. This is in contrast to text editors used for coding,
 which allow users to view and edit the plain text.
-::::
+:::
 
 Three recommended editors/environments are presented below.
 
@@ -80,10 +80,10 @@ code cells can be run interactively. Both the code itself and outputs of cells
 that have been run are integrated directly into a "notebook" document, which
 provides a record of computational inputs and outputs alongside explanatory text
 and other components like images and mathematical expressions. This can be quite
-useful in cases where users want to produce a single document that essentially
-tells a cohesive story of their analysis and includes several outputs along the
-way. Note that Jupyter Notebooks are only a viable option for use cases where
-code is run interactively.
+useful in cases where users want to produce a single document that tells a
+cohesive story of their analysis and includes several outputs along the way.
+Note that Jupyter Notebooks are only a viable option for use cases where code is
+run interactively.
 
 ## Version Control
 
@@ -103,9 +103,9 @@ version control, any changes to a file or set of files over time are recorded so
 that you can recall specific versions later. Git also enables multiple users to
 work on the same codebase in a managed and transparent way.
 
-Git works by storing the differences between versions of tracked files over time
-in a special type of database that can be queried to return the state of any
-tracked file at any point in its history. As a user "commits" changes to the
+Git works by storing a snapshot of each version of a set of tracked files over
+time in a special type of database that can be queried to return the state of
+any tracked file at any point in its history. As a user "commits" changes to the
 code, the associated information is added to the Git database. On collaborative
 projects, the full code repository (including history) is mirrored on each
 developer's computer, with "pushing" and "pulling" to/from a shared remote
@@ -196,7 +196,7 @@ below.
 
 ### Bash
 
-[Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) is an extremely popular
+[Bash](<https://en.wikipedia.org/wiki/Bash_(Unix_shell)>) is an extremely popular
 Unix-style command shell. It is not natively installed on Windows, but a version
 called Git Bash is included with the
 [Git for Windows](https://gitforwindows.org) distribution. Unix-style command
@@ -206,10 +206,8 @@ Unix-style shell. Git Bash is the easiest way to get up and running with a
 Unix-style shell on Windows, and is the recommended approach.
 
 ::: tip
-
-Persistent Bash preferences can be configured using hidden files named *.bashrc*
-and *.bash_profile*.
-
+Persistent Bash preferences can be configured using hidden files named _.bashrc_
+and _.bash_profile_.
 :::
 
 ### PowerShell
@@ -217,6 +215,6 @@ and *.bash_profile*.
 [PowerShell](https://docs.microsoft.com/en-us/powershell/) is a
 Microsoft-developed command shell that is installed by default on all modern
 Windows computers. It is quite capable, and has become more so in recent years,
-but uses entirely different commands than Unix-style shells. PowerShell is
+but it uses different commands than Unix-style shells. PowerShell is
 recommended if you need a Windows-specific shell, but for other applications,
 use Bash instead.
