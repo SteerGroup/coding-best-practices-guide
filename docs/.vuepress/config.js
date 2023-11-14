@@ -1,7 +1,11 @@
-module.exports = {
+import { defaultTheme } from 'vuepress'
+import { searchPlugin } from '@vuepress/plugin-search'
+
+export default {
+  lang: 'en-US',
   title: 'Coding Best Practices Guide',
   description: 'Guide to programming best practices at Steer',
-  themeConfig: {
+  theme: defaultTheme({
     logo: '/steer_logo.png',
     sidebar: [
       '/',
@@ -15,19 +19,16 @@ module.exports = {
       'refactoring',
       'documentation',
       'miscellaneous'
-    ]
-  },
+    ],
+  }),
   plugins: [
-    [
-      '@vuepress/plugin-search',
-      {
-        locales: {
-          '/': {
-            placeholder: 'Search',
-          },
+    searchPlugin({
+      locales: {
+        '/': {
+          placeholder: 'Search',
         },
       },
-    ],
+    }),
   ],
   lastUpdated: 'Last Updated',
 }
